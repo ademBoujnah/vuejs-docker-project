@@ -3,8 +3,8 @@ pipeline {
     
     environment {
         NEXUS_REPO_URL = "http://localhost:8081/repository"  // Replace with your actual Nexus Repository URL
-        NEXUS_REPO_NAME = "vueJs-Dockerized"               // Replace with your actual Nexus Repository Name
-        DOCKER_IMAGE_TAG = "vueJs-app:latest"
+        NEXUS_REPO_NAME = "vuejs-dockerized"               // Replace with your actual Nexus Repository Name
+        DOCKER_IMAGE_TAG = "vuejs-app:latest"
     }
     
     stages {
