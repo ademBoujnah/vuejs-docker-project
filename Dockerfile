@@ -2,6 +2,7 @@
 FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
+RUN npm install node-sass@12
 RUN npm install
 RUN npm install -g npm@latest
 COPY . .
