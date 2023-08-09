@@ -3,6 +3,7 @@ FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
 RUN npm cache clean –force
+RUN npm config set registry http://registry.npmjs.org/
 RUN npm install
 RUN npm install -g npm@latest
 COPY . .
